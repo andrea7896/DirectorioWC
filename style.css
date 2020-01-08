@@ -1,6 +1,6 @@
 .card-container {
     width: 50%;
-    height: 80px;
+    height: 150px;
 }
 .card {
     padding: 10px;
@@ -12,4 +12,10 @@
 .texto {
     text-align: center;
     font-size: 14px;
+}
+.wcs-column {
+    display:flex;
+}
+a {
+    display:block;
 }
