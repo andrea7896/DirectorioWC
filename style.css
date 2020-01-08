@@ -1,0 +1,15 @@
+.card-container {
+    width: 50%;
+    height: 80px;
+}
+.card {
+    padding: 10px;
+}
+
+.imagen {
+    margin: 10px;
+}
+.texto {
+    text-align: center;
+    font-size: 14px;
+}
