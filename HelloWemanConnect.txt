@@ -1,0 +1,24 @@
+Ejercicio 1: Repositorio Colaborativo
+
+Crear una Página Web: Directorio de Estudiantes de WemanConnect
+
+HomePage
+	> HEADER
+		>Logo WC
+		>Title
+	> CONTENT		
+		>Sección con 10 Tarjetas de Contacto
+
+Contenido del Card:
+a) Nombre Completo
+b) Teléfono
+c) Fotografía
+d) Sitio Favorito de internet
+e) Botón que despliegue mensaje
+
+1) Estilo General
+2) Cada card debe tener su propio estilo
+
+NOTA:
+CSS Stylesheet
+JS Script
