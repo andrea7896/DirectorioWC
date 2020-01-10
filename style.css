@@ -19,3 +19,30 @@
 a {
     display:block;
 }
+#lagg{
+    flex-direction: row;
+    letter-spacing: 2px;
+    line-height:12.5px;
+    background-color: rgb(209, 209, 209);
+    border-radius: 20px; 
+    width: 50%;
+    box-sizing: inherit;
+    font-style: normal;
+    font-family: 'Ubuntu', sans-serif;
+}
+#laggimagen{
+    float: left;
+    max-width: 100%;
+    height: auto;
+ }
+#laggtexto{
+    white-space:nowrap;
+    text-align: justify;
+    float: right;
+    width: 500px;
+    height: 300px;
+}
+#laggbutton{
+    border: 1px solid rgb(88, 66, 82);
+    margin:0px;
+}
