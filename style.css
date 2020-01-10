@@ -46,3 +46,25 @@ a {
     border: 1px solid rgb(88, 66, 82);
     margin:0px;
 }
+
+#mgarcia7{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    background-color: rgba(124, 34, 64, 0.425);
+    border: 1px solid rgb(94, 6, 35);
+    border-radius: 7px;
+}
+
+#mgarcia7imagen{
+    float: left;
+    display: block;
+    border-radius: 150px;
+}
+
+#mgarcia7button{
+    color: slategray;
+    border-radius: 5px;
+    border: 1px solid rgb(88, 66, 82);
+    cursor: pointer;
+   
+}
