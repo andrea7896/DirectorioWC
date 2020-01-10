@@ -32,6 +32,41 @@ el proyecto está listo para configurarlo como un repositorio de GIT.
 
 ## Ejercicio 2: Trabajo colaborativo en github
 
+__Objetivos:__ 
+
+- Experimentar el trabajo de varios colaboradores trabajando sobre un mismo branch.
+- Ejercicio básico de HTML y CSS.
+
+##### Instrucciones
+
+Crear una página web: Directorio de Estudiantes de WemanConnect
+
+La maquetación debe contener los siguientes elementos:
+
+Header:
+- Logo de WeManConnect
+- Título de la Página: Directorio de Estudiantes de WeManConnect
+
+Contenido:
+
+- Sección con 10 Tarjetas de contacto
+- Los contactos deben estar ordenados en orden alfabético
+- Cada Tarjeta de contacto debe llevar la siguiente información:
+    - Nombre completo.
+    - Email (pueden utilizar uno falso).
+    - Fotografía (pueden utilizar una imagen de algún personaje favorito).
+    - Una liga a su sitio favorito de internet.
+    - Un botón con la leyenda: Conóceme.
+- La página debe tener un estilo general para la maquetación, y para la estructura de la tarjeta de contacto.
+- Cada tarjeta de contacto debe tener su propio estilo (cada estudiante debe estilizar a su gusto la tarjeta 
+que le corresponde de acuerdo al orden alfabético de su nombre).
+- Los estilos deben declararse en su propio documento CSS que deberá ser importado en el HTML.
+- El botón *Conóceme* debe imprimir en el Panel Console de Chrome DevTools la frase favorita de cada estudiante.
+- Para ello, debemos crear un archivo de Javascript e importarlo en el HTML/
+- Cada estudiante debe crear su propia función de Javascript para ser utilizada por el botón correspondiente a su card.
+
+Footer:
+- Leyenda: Powered by WemanConnect Students 
 
 
 ## Ejercicio 3: Trabajando en mi propio branch
