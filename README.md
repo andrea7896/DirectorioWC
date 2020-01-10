@@ -2,7 +2,7 @@
 
 ## Ejercicio 1: Crear mi propio repositorio en github
 
-Objetivo: Aprender a crear un proyecto básico de HTML y CSS, y versionarlo con GIT.
+__Objetivo:__ Aprender a crear un proyecto básico de HTML y CSS, y versionarlo con GIT.
 
 ##### Crear la base del proyecto en mi ambiente local:
 
@@ -33,7 +33,53 @@ el proyecto está listo para configurarlo como un repositorio de GIT.
 ## Ejercicio 2: Trabajo colaborativo en github
 
 
+
 ## Ejercicio 3: Trabajando en mi propio branch
+
+__Objetivos:__
+ - Aprender a crear y trabajar en un nuevo branch de mi repositorio
+ - Practicar la creación de un Bash Script
+ 
+##### Creación del Nuevo Branch
+ 
+1. Abre la terminal y navega hasta la carpeta del proyecto
+2. Verifica el estado de tu repositorio con `git status`. Debes estar situada en el branch `master`.
+3. Crea un nuevo branch a partir de `master`. Ejemplo: `git checkout -b  kmartin_bashscript`.
+4. Verifica con `git status` que estés situada en el nuevo branch. Ej: `On branch kmartin_bashscript`.
+5. Sube el nuevo branch al repositorio remoto: `git push -u origin kmartin_bashscript` 
+6. Estás lista para empezar a trabajar en el nuevo branch.
+ 
+##### Pasos para crear un Bash Script
+
+1. Verifica con `git status` que estás trabajando en el nuevo branch.
+2. Crea un nuevo archivo con la extensión `.ssh`. Ejemplo: `touch my_bash.sh`
+3. Abre el proyecto en Virtual Studio Code para editar el bash script.
+4. Contenido del archivo:
+    1. El script debe ser capaz de leer desde el CLI un nombre e imprimir un mensaje de saludo. 
+    El código es el siguiente:
+    
+        ```
+        read -p "May I know your name, please?" name  
+        echo "Hello $name, Welcome to WemanConnect Bootcamp!"
+        ```
+    
+    2. Consulta la presentación o tus notas de la clase de CLI para recordar cuál tiene que ser la primera línea 
+     de este archivo para ser considerado un Bash script, y complétalo.
+5. Regresa a la terminal y verifica los permisos del archivo (consulta tus notas para recordar cómo hacerlo).
+6. Si el archivo no tiene permisos de ejecución, proporciónalos con `chmod +x my_bash.sh`
+7. Una vez que el código del script esté completo, y el archivo tenga permisos de ejecución, córrelo desde 
+la terminal utilizando uno de los siguientes comandos:
+    
+    `./my_bash.sh`
+    
+    `sh my_bash.sh`
+    
+    `bash my_bash.sh`
+
+8. El resultado esperado es: la terminal debe mostrarnos el mensaje "May I know your name, please?" y esperar 
+a que introduzcamos un nombre en la pantalla, ejemplo: Karla. Una vez que introducimos el nombre debe desplegar el mensaje de
+saludo "Hello Karla, Welcome to WemanConnect Bootcamp!".
+9. Si todo sale bien, sube tus cambios al repositorio, y comprueba que se subieron consultando tu cuenta de github.
 
 
 ## Enlaces de Interés
