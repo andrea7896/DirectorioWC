@@ -86,3 +86,43 @@ a {
     outline-style: double;
     outline-color: greenyellow;
   }
+
+#nalleN {
+    background-color: lightcoral;
+    border-radius: 5px;
+    margin: 10px;
+    }
+
+#nalleNimagen { 
+   float: left;    
+   width: 110px;
+   height: 110px;
+   }
+
+#nalleNtexto {
+    text-align: center;
+    float: center;
+    font-size: 12px;
+}
+
+#nalleNbutton {
+   background-color: white;
+   color: purple; 
+   border:none; 
+   border-radius: 3px;
+    padding: 4px;
+    margin: 5px;
+    font-size: 12px;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    }
+
+#nalleNbutton:hover {
+    background-color: purple;
+    color: white; 
+ }
+    
+
+    
+   
