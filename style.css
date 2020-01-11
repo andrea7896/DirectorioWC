@@ -68,3 +68,21 @@ a {
     cursor: pointer;
    
 }
+
+#IMC {
+    background-color: rgb(231, 231, 126);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+#IMI {
+    height: 92px;
+    width: 98px;
+    align-items: left;
+  }
+
+#IMB {
+    outline-style: double;
+    outline-color: greenyellow;
+  }
