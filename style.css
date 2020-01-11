@@ -86,3 +86,24 @@ a {
     outline-style: double;
     outline-color: greenyellow;
   }
+
+/* llh card styles */
+  #llh {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: dimgray;
+      background-color: rgb(138, 243, 208);
+      border: 3px solid rgb(126, 122, 122);
+  }
+  #llhimg {
+      float: left;
+      max-width: 80px;
+      max-height: 80px;
+      border: 8px solid gray;
+      vertical-align: middle;
+  }
+
+  #llhbutton {
+    color: black;
+    border: 2px solid dimgray ;
+    border-radius: 10px;
+  }
