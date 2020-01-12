@@ -1,6 +1,7 @@
 .card-container {
     width: 50%;
     height: 150px;
+    margin: 5px;
 }
 .card {
     padding: 10px;
@@ -19,6 +20,37 @@
 a {
     display:block;
 }
+
+#ansv{
+    border-radius: 20px;
+    border: 6px dashed palevioletred;
+    height: auto;
+}
+#ansvtexto{
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    background-color:thistle;
+    height: auto;
+    padding: 5px;
+    border-radius: 10px;
+}
+#ansvtexto button:hover{
+    color: white;
+    background-color: palevioletred;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+
+#ansvimagen{
+    float: left;
+    height: auto;
+}
+#ansvimagen img{
+    border-radius: 10px;
+    max-width: 130px;
+    height: auto;
+}
+
 #lagg{
     flex-direction: row;
     letter-spacing: 2px;
