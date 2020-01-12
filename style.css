@@ -175,8 +175,39 @@ a {
       vertical-align: middle;
   }
 
-  #llhbutton {
-    color: black;
-    border: 2px solid dimgray ;
-    border-radius: 10px;
-  }
+ /*MFGG Card styles */
+
+
+#MFGGText{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: block;
+    background-color: #f7cac9 ;
+    border: 4px solid#57084a;
+    border-style: dashed; 
+    text-align: justify;
+    
+}
+
+#MFGGIMG {
+    float: left;
+    max-width: 120px;
+    max-height: 120px;
+    vertical-align: middle;
+    border-radius:150px;
+    border:2px solid #57084a;
+    
+   
+    
+}
+
+#MFGGbutton {
+   background-color: thistle;
+    border-radius:6px ;
+    border: 2px double  #57084a ;
+    color: rgb(93, 9, 74);
+    font-style: oblique;
+    text-decoration: wavy;
+    text-transform: lowercase;
+    
+    
+}
