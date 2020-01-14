@@ -211,3 +211,19 @@ a {
     
     
 }
+#vera{
+    background-color:rgb(151, 86, 91);
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 6px;
+}
+#veraimagen{
+    float:left;
+    width: 100px;
+    height: 100px;
+}
+
+#verabutton{
+    background-color: rgb(235, 193, 195);
+    border-radius: 10px;
+}
