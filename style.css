@@ -52,30 +52,36 @@ a {
 }
 
 #lagg{
-    flex-direction: row;
     letter-spacing: 2px;
     line-height:12.5px;
     background-color: rgb(209, 209, 209);
-    border-radius: 20px; 
-    width: 50%;
-    box-sizing: inherit;
+    border-radius: 5px; 
     font-style: normal;
     font-family: 'Ubuntu', sans-serif;
-}
-#laggimagen{
-    float: left;
-    max-width: 100%;
+    border: 2px solid rgb(94, 6, 35);
     height: auto;
+    margin: 10px;
+}
+#laggimagen {
+    float: left;
+    border-radius: 10px;
+    display: block;
+    justify-content: left;
+    max-width: 120px; 
+    padding-inline-start: inherit;
+    margin-left: 10px;
+    margin-top: 10px;
  }
-#laggtexto{
+
+#laggtexto {
     white-space:nowrap;
-    text-align: justify;
-    float: right;
-    width: 500px;
-    height: 300px;
+    justify-content: center;
+    height: auto;
+    text-align: center;
+   
 }
 #laggbutton{
-    border: 1px solid rgb(88, 66, 82);
+    border: 2.5px solid rgb(88, 66, 82);
     margin:0px;
 }
 
