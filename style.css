@@ -104,19 +104,28 @@ a {
 #IMC {
     background-color: rgb(231, 231, 126);
     display: flex;
-    justify-content: center;
-    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0.625rem 0.625rem 0 0 rgba(0,0,0,.2);
   }
 
 #IMI {
-    height: 92px;
-    width: 98px;
-    align-items: left;
+    width: 100px; 
+    height: 100px;
+    border-radius: 5px;
+    box-shadow: 0.625rem 0.625rem 0 0 rgba(0,0,0,.2);
+    float: left;
+    justify-content: left;
   }
+
+#IMT {  
+    text-align-last: right;    
+    justify-content: right;
+}
 
 #IMB {
     outline-style: double;
     outline-color: greenyellow;
+    text-align-last: right;
   }
 
 
