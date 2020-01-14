@@ -227,3 +227,31 @@ a {
     background-color: rgb(235, 193, 195);
     border-radius: 10px;
 }
+
+/*marr Card styles */
+
+#marr{
+    background-color: rgb(10, 255, 202);
+    border-radius: 10px; 
+    border: 3px dotted blue ;
+    width: 50%;
+}
+
+#marr_txt{
+    font-family: 'Monsterrat', 'Montserrat-Regular';
+    font-style: normal;
+    letter-spacing: 1.5px;
+}   
+#marrphoto{
+    float: left;
+    max-width: 110px;
+    max-height: 110px;
+    vertical-align: middle;
+    border: 2px solid rgb(42, 127, 255);
+    border-radius: 5px;  
+}      
+#marrbttn{
+    background-color: gray;
+    vertical-align: bottom;
+}   
+
