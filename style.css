@@ -1,3 +1,29 @@
+.header {
+    width: 100%;
+    height: auto;
+    background-color: rgb(210, 136, 212);
+    display: flex;
+}
+
+#contenedorlogo {
+    width: 20%;
+    height: 3%;
+    align-content: center;
+}
+
+#logo {
+    width: 100%;
+    height: auto;
+    margin: 2%;
+}
+
+#textoh {
+    width: 25%;
+    vertical-align: middle;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
 .card-container {
     width: 50%;
     height: 150px;
@@ -269,4 +295,36 @@ a {
     background-color: gray;
     vertical-align: bottom;
 }   
+
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: rgb(210, 136, 212);
+    display: flex;
+    padding: 3%;
+}
+
+#contenedorFo{
+    width: 20%;
+    height: 3%;
+    align-content: center;
+}
+
+#logoof{
+    width: 100%;
+    height: auto;
+    
+    /*margin: 2%;*/
+    
+}
+
+#conText{
+    width: 25%;
+    vertical-align: middle;
+    padding-left: 45%;
+    margin-top: 2%;
+    margin-left:30%;
+    
+    
+}
 
