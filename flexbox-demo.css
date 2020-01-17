@@ -1,0 +1,29 @@
+.gray-div {
+    background-color: lightgray;
+    padding: 5px;
+}
+
+.gray-div > div {
+    margin: 10px;
+    min-height: 50px;
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.blue-div {
+    background-color: dodgerblue;
+}
+
+.green-div {
+    background-color: green;
+}
+
+.red-div {
+    background-color: #FF696D;
+}
+
+.yellow-div {
+    background-color: #FFD347;
+}
