@@ -8,16 +8,67 @@
     <link rel="stylesheet" href="flexbox-demo.css"/>
 </head>
 <body>
-<div>
-    <h1>Hello Flexbox</h1>
-    <h3>Default Behaviour: display:block - No Flexbox applied</h3>
-    <div class="gray-div">
-        <div class="green-div">1</div>
-        <div class="yellow-div">2</div>
-        <div class="red-div">3</div>
-        <div class="blue-div">4</div>
-    </div>
-</div>
+    <div>
+        <h1>Hello Flexbox</h1>
+        <h2>No Flexbox</h2>
+        <h3>Comportamiento por default: <span class="red-text">display:block</span></h3>
+        <p>Los elementos se posicionan uno abajo del otro, ocupando todo el ancho de la fila.</p>
+        <div class="gray-div">
+            <div class="green-div">One</div>
+            <div class="yellow-div">Two</div>
+            <div class="red-div">Three</div>
+            <div class="blue-div">Four</div>
+        </div>
 
+        <h2>Con Flexbox</h2>
+        <h3>Comportamiento por default - Alineación en Fila:
+            <span class="red-text">display:flex; flex-direction:row</span></h3>
+        <ul>
+            <li>Los elementos se posicionan en una sola <b>fila</b> (la propiedad <b>flex-direction</b> por defecto
+                es <b>row</b>).
+            <li>Esto quiere decir que el <b>Eje Principal</b> corre de manera horizontal y el
+                <b>Eje Cruzado</b> en forma vertical.</li>
+            </li>
+            <li>Los elementos empiezan desde el margen inicial sobre el <b>Eje Principal</b> (si <b>flex-direction</b>
+                es <b>row</b>, entonces el margen <b>inicial</b> quedará a la <b>izquierda</b>
+                y el margen <b>final</b> a la <b>derecha</b>).
+            </li>
+            <li>Los elementos no se ajustan en la dimensión principal, pero se pueden contraer al tamaño de su contenido.</li>
+            <li>Los elementos se ajustan para llenar el tamaño del <b>Eje Cruzado</b> (el contenedor padre de este ejemplo
+                tiene un <b>min-height</b> de 100px).</li>
+        </ul>
+        <div class="gray-div flexbox-parent">
+            <div class="green-div">One</div>
+            <div class="yellow-div">Two</div>
+            <div class="red-div">Three</div>
+            <div class="blue-div">Four</div>
+        </div>
+        <ul>
+            <li>Si hay más elementos de los que caben en el contenedor, estos no pasarán más abajo, sino
+                que sobrepasarán el margen.</li>
+            <li>Si hay elementos más altos que otros, todos los elementos serán ajustados en el <b>Eje Cruzado</b>
+                para alcanzar al mayor.</li>
+        </ul>
+        <div class="gray-div flexbox-parent">
+            <div class="green-div">One</div>
+            <div class="yellow-div">Two</div>
+            <div class="red-div">Three Three Three Three</div>
+            <div class="blue-div">Four</div>
+            <div class="green-div">One</div>
+            <div class="yellow-div">Two</div>
+            <div class="red-div">Three</div>
+            <div class="blue-div">Four Four Four</div>
+            <div class="green-div">One</div>
+            <div class="yellow-div">Two</div>
+            <div class="red-div">Three</div>
+            <div class="blue-div">Four</div>
+            <div class="green-div">One</div>
+            <div class="yellow-div">Two</div>
+            <div class="red-div">Three</div>
+            <div class="blue-div">Four</div>
+            <div class="green-div">One</div>
+            <div class="yellow-div">Two</div>
+        </div>
+    </div>
 </body>
 </html>
