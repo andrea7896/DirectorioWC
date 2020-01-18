@@ -6,7 +6,6 @@
 }
 
 .gray-div > div {
-    margin: 10px;
     color: white;
     font-size: 2em;
     font-weight: bold;
@@ -35,4 +34,35 @@
 
 .flexbox-parent {
     display: flex;
+}
+
+.flexbox-parent-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-start {
+    justify-content: flex-start;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+.flex-center {
+    justify-content: center;
+}
+
+.flex-space-between {
+ justify-content: space-between;
+}
+
+.flex-space-around {
+    justify-content: space-around;
+}
+
+.section-wrapper {
+    border: 2px solid darkgray;
+    padding: 5px;
+    margin-bottom: 1em;
 }
