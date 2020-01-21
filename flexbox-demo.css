@@ -1,8 +1,53 @@
+/* General Styles */
+
+body {
+    margin: 0;
+    background-color: whitesmoke;
+}
+
+main {
+    margin: 8px;
+}
+
+.navbar {
+    background-color: #5f5f5f;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+
+.navbar a {
+    color: #ffffff;
+    display: block;
+    padding: 15px 10px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #707070;
+    cursor: pointer;
+}
+
+.navbar a.active {
+    background-color: #707070;
+}
+
+.section-wrapper {
+    border: 2px solid darkgray;
+    padding: 5px;
+    margin-bottom: 1em;
+}
+
+.section-wrapper ul li {
+    line-height: 1.5em;
+}
+
 .gray-div {
     background-color: lightgray;
-    padding: 5px;
     margin: 5px;
     min-height: 100px;
+    padding: 10px;
 }
 
 .gray-div > div {
@@ -14,6 +59,10 @@
 
 .blue-div {
     background-color: dodgerblue;
+}
+
+.blue-text {
+    color: dodgerblue;
 }
 
 .green-div {
@@ -31,6 +80,9 @@
 .yellow-div {
     background-color: #FFD347;
 }
+
+
+/* Flexbox Properties */
 
 .flexbox-parent {
     display: flex;
@@ -61,8 +113,18 @@
     justify-content: space-around;
 }
 
-.section-wrapper {
-    border: 2px solid darkgray;
-    padding: 5px;
-    margin-bottom: 1em;
+.flex-align-start {
+    align-items: flex-start;
+}
+
+.flex-align-end {
+    align-items: flex-end;
+}
+
+.flex-align-center {
+    align-items: center;
+}
+
+.flex-align-stretch {
+    align-items: stretch;
 }
