@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FlexBox Demo</title>
+    <link rel="stylesheet" href="flexbox-demo.css"/>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="flexbox-demo.html">Contenedores Flexbox</a>
+        <a href="flexbox-alignment-main-axis.html" class="active">Alineación de Elementos</a>
+        <a href="flexbox-demo-distribution.html">Distribución de Elementos</a>
+    </nav>
+    <nav class="subnavbar">
+        <a href="flexbox-alignment-main-axis.html">Eje Principal (Justify Content)</a>
+        <a href="flexbox-alignment-cross-axis.html" class="active">Eje Cruzado (Align Items)</a>
+    </nav>
+    <main>
+        <h2>Con respecto al Eje Cruzado cuando <span class="blue-text">flex-direction: row</span></h2>
+        <section class="section-wrapper">
+            <h3>Alinea los elementos al inicio del contenedor flex -
+                <span class="red-text">align-items: flex-start</span></h3>
+            <div class="gray-div flexbox-parent flex-align-start">
+                <div class="green-div">One</div>
+                <div class="yellow-div">Two</div>
+                <div class="red-div">Three</div>
+                <div class="blue-div">Four</div>
+            </div>
+        </section>
+
+        <section class="section-wrapper">
+            <h3>Alinea los elementos al final del contenedor flex -
+                <span class="red-text">align-items: flex-end</span></h3>
+            <div class="gray-div flexbox-parent flex-align-end">
+                <div class="green-div">One</div>
+                <div class="yellow-div">Two</div>
+                <div class="red-div">Three</div>
+                <div class="blue-div">Four</div>
+            </div>
+        </section>
+
+        <section class="section-wrapper">
+            <h3>Alinea los elementos al centro del contenedor flex -
+                <span class="red-text">align-items: center</span></h3>
+            <div class="gray-div flexbox-parent flex-align-center">
+                <div class="green-div">One</div>
+                <div class="yellow-div">Two</div>
+                <div class="red-div">Three</div>
+                <div class="blue-div">Four</div>
+            </div>
+        </section>
+
+        <section class="section-wrapper">
+            <h3>Los elementos se expanden por todo el Eje Cruzado -
+                <span class="red-text">align-items: stretch</span></h3>
+            <div class="gray-div flexbox-parent flex-align-stretch">
+                <div class="green-div">One</div>
+                <div class="yellow-div">Two</div>
+                <div class="red-div">Three</div>
+                <div class="blue-div">Four</div>
+            </div>
+        </section>
+
+        <section class="section-wrapper">
+            <h3>La parte inferior de los párrafos se alinean -
+                <span class="red-text">align-items: baseline</span></h3>
+            <div class="gray-div flexbox-parent flex-align-baseline">
+                <div class="green-div" style="height: 80px; text-decoration: underline">One</div>
+                <div class="yellow-div" style="height: 40px; text-decoration: underline">Two</div>
+                <div class="red-div" style="height: 70px; text-decoration: underline">Three</div>
+                <div class="blue-div" style="height: 50px; text-decoration: underline">Four</div>
+            </div>
+            <h3>En ausencia de párrafos, se alinean las partes inferiores de los contenedores -
+                <span class="red-text">align-items: baseline</span></h3>
+            <div class="gray-div flexbox-parent flex-align-baseline">
+                <div class="green-div" style="height: 80px; width: 80px; text-decoration: underline"></div>
+                <div class="yellow-div" style="height: 40px; width: 80px; text-decoration: underline"></div>
+                <div class="red-div" style="height: 70px; width: 80px; text-decoration: underline"></div>
+                <div class="blue-div" style="height: 50px; width: 80px; text-decoration: underline"></div>
+            </div>
+        </section>
+
+        <h2>Con respecto al Eje Cruzado cuando <span class="blue-text">flex-direction: column</span></h2>
+        <section class="section-wrapper">
+            <h3>Alinea los elementos al inicio del contenedor flex -
+                <span class="red-text">align-items: flex-start</span></h3>
+            <div class="gray-div flexbox-parent-column flex-align-start">
+                <div class="green-div">One</div>
+                <div class="yellow-div">Two</div>
+                <div class="red-div">Three</div>
+                <div class="blue-div">Four</div>
+            </div>
+        </section>
+
+        <section class="section-wrapper">
+            <h3>Alinea los elementos al final del contenedor flex -
+                <span class="red-text">align-items: flex-end</span></h3>
+            <div class="gray-div flexbox-parent-column flex-align-end">
+                <div class="green-div">One</div>
+                <div class="yellow-div">Two</div>
+                <div class="red-div">Three</div>
+                <div class="blue-div">Four</div>
+            </div>
+        </section>
+
+        <section class="section-wrapper">
+            <h3>Alinea los elementos al centro del contenedor flex -
+                <span class="red-text">align-items: center</span></h3>
+            <div class="gray-div flexbox-parent-column flex-align-center">
+                <div class="green-div">One</div>
+                <div class="yellow-div">Two</div>
+                <div class="red-div">Three</div>
+                <div class="blue-div">Four</div>
+            </div>
+        </section>
+
+        <section class="section-wrapper">
+            <h3>Los elementos se expanden por todo el Eje Cruzado -
+                <span class="red-text">align-items: stretch</span></h3>
+            <div class="gray-div flexbox-parent-column flex-align-stretch">
+                <div class="green-div">One</div>
+                <div class="yellow-div">Two</div>
+                <div class="red-div">Three</div>
+                <div class="blue-div">Four</div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

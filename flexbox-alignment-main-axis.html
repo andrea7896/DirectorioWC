@@ -10,12 +10,15 @@
 <body>
     <nav class="navbar">
         <a href="flexbox-demo.html">Contenedores Flexbox</a>
-        <a href="flexbox-demo-alignments.html" class="active">Alineación de Elementos</a>
+        <a href="flexbox-alignment-main-axis.html" class="active">Alineación de Elementos</a>
         <a href="flexbox-demo-distribution.html">Distribución de Elementos</a>
     </nav>
+    <nav class="subnavbar">
+        <a href="flexbox-alignment-main-axis.html" class="active">Eje Principal (Justify Content)</a>
+        <a href="flexbox-alignment-cross-axis.html">Eje Cruzado (Align Items)</a>
+    </nav>
     <main>
-        <h2>Alineación de Elementos en Base al Eje Principal -
-            <span class="blue-text">flex-direction: row</span></h2>
+        <h2>Con respecto al Eje Principal cuando <span class="blue-text">flex-direction: row</span></h2>
         <section class="section-wrapper">
             <h3>Alinea los elementos a partir del margen inicial (izquierda) del contenedor padre -
                 <span class="red-text">justify-content: flex-start</span></h3>
@@ -25,7 +28,9 @@
                 <div class="red-div">Three</div>
                 <div class="blue-div">Four</div>
             </div>
+        </section>
 
+        <section class="section-wrapper">
             <h3>Alinea los elementos a partir del margen final (derecha) del contenedor padre -
                 <span class="red-text">justify-content: flex-end</span></h3>
             <div class="gray-div flexbox-parent flex-end">
@@ -34,7 +39,9 @@
                 <div class="red-div">Three</div>
                 <div class="blue-div">Four</div>
             </div>
+        </section>
 
+        <section class="section-wrapper">
             <h3>Alinea los elementos al centro del contenedor padre -
                 <span class="red-text">justify-content: flex-center</span></h3>
             <div class="gray-div flexbox-parent flex-center">
@@ -43,7 +50,9 @@
                 <div class="red-div">Three</div>
                 <div class="blue-div">Four</div>
             </div>
+        </section>
 
+        <section class="section-wrapper">
             <h3>Toma el espacio sobrante después de que los elementos hayan sido colocados, y distribuye de forma
                 pareja los elementos para que haya un espacio equitativo <br> entre cada uno de ellos -
                 <span class="red-text">justify-content: space-between</span></h3>
@@ -65,8 +74,7 @@
             </div>
         </section>
 
-        <h2>Alineación de Elementos en Base al Eje Principal -
-            <span class="blue-text">flex-direction: column</span></h2>
+        <h2>Con respecto al Eje Principal cuando <span class="blue-text">flex-direction: column</span></h2>
         <section class="section-wrapper">
             <h3>Alinea los elementos a partir del margen inicial (arriba) del contenedor padre -
                 <span class="red-text">justify-content: flex-start</span></h3>
@@ -76,7 +84,9 @@
                 <div class="red-div">Three</div>
                 <div class="blue-div">Four</div>
             </div>
+        </section>
 
+        <section class="section-wrapper">
             <h3>Alinea los elementos a partir del margen final (abajo) del contenedor padre -
                 <span class="red-text">justify-content: flex-end</span></h3>
             <div class="gray-div flexbox-parent-column flex-end" style="height: 200px">
@@ -85,7 +95,9 @@
                 <div class="red-div">Three</div>
                 <div class="blue-div">Four</div>
             </div>
+        </section>
 
+        <section class="section-wrapper">
             <h3>Alinea los elementos al centro del contenedor padre -
                 <span class="red-text">justify-content: flex-center</span></h3>
             <div class="gray-div flexbox-parent-column flex-center" style="height: 200px">
@@ -94,7 +106,9 @@
                 <div class="red-div">Three</div>
                 <div class="blue-div">Four</div>
             </div>
+        </section>
 
+        <section class="section-wrapper">
             <h3>Toma el espacio sobrante después de que los elementos hayan sido colocados, y distribuye de forma
                 pareja los elementos para que haya un espacio equitativo <br> entre cada uno de ellos -
                 <span class="red-text">justify-content: space-between</span></h3>
@@ -104,69 +118,13 @@
                 <div class="red-div">Three</div>
                 <div class="blue-div">Four</div>
             </div>
+        </section>
 
+        <section class="section-wrapper">
             <h3>Toma el espacio sobrante después de que los elementos hayan sido colocados, y crea un espacio
                 equitativo a la derecha e izquierda <br> de cada elemento -
                 <span class="red-text">justify-content: space-around</span></h3>
             <div class="gray-div flexbox-parent-column flex-space-around" style="height: 250px">
-                <div class="green-div">One</div>
-                <div class="yellow-div">Two</div>
-                <div class="red-div">Three</div>
-                <div class="blue-div">Four</div>
-            </div>
-        </section>
-
-        <h2>Alineación de Elementos en Base al Eje Cruzado -
-            <span class="blue-text">flex-direction: row</span></h2>
-        <section class="section-wrapper">
-            <div class="gray-div flexbox-parent flex-align-start">
-                <div class="green-div">One</div>
-                <div class="yellow-div">Two</div>
-                <div class="red-div">Three</div>
-                <div class="blue-div">Four</div>
-            </div>
-            <div class="gray-div flexbox-parent flex-align-end">
-                <div class="green-div">One</div>
-                <div class="yellow-div">Two</div>
-                <div class="red-div">Three</div>
-                <div class="blue-div">Four</div>
-            </div>
-            <div class="gray-div flexbox-parent flex-align-center">
-                <div class="green-div">One</div>
-                <div class="yellow-div">Two</div>
-                <div class="red-div">Three</div>
-                <div class="blue-div">Four</div>
-            </div>
-            <div class="gray-div flexbox-parent flex-align-stretch">
-                <div class="green-div">One</div>
-                <div class="yellow-div">Two</div>
-                <div class="red-div">Three</div>
-                <div class="blue-div">Four</div>
-            </div>
-        </section>
-
-        <h2>Alineación de Elementos en Base al Eje Cruzado -
-            <span class="blue-text">flex-direction: column</span></h2>
-        <section class="section-wrapper">
-            <div class="gray-div flexbox-parent-column flex-align-start">
-                <div class="green-div">One</div>
-                <div class="yellow-div">Two</div>
-                <div class="red-div">Three</div>
-                <div class="blue-div">Four</div>
-            </div>
-            <div class="gray-div flexbox-parent-column flex-align-end">
-                <div class="green-div">One</div>
-                <div class="yellow-div">Two</div>
-                <div class="red-div">Three</div>
-                <div class="blue-div">Four</div>
-            </div>
-            <div class="gray-div flexbox-parent-column flex-align-center">
-                <div class="green-div">One</div>
-                <div class="yellow-div">Two</div>
-                <div class="red-div">Three</div>
-                <div class="blue-div">Four</div>
-            </div>
-            <div class="gray-div flexbox-parent-column flex-align-stretch">
                 <div class="green-div">One</div>
                 <div class="yellow-div">Two</div>
                 <div class="red-div">Three</div>
