@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FlexBox Demo</title>
+    <link rel="stylesheet" href="flexbox-demo.css"/>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="flexbox-demo.html">Contenedores Flexbox</a>
+        <a href="flexbox-alignment-main-axis.html" class="active">Alineación de Elementos</a>
+        <a href="flexbox-demo-distribution.html">Distribución de Elementos</a>
+    </nav>
+    <nav class="subnavbar">
+        <a href="flexbox-alignment-main-axis.html">Eje Principal (Justify Content)</a>
+        <a href="flexbox-alignment-cross-axis.html">Eje Cruzado (Align Items)</a>
+        <a href="flexbox-alignment-self.html" class="active">Un Elemento en Particular (Align Self)</a>
+    </nav>
+    <main>
+        <h2>Manipula la alineación de un elemento en particular: <span class="red-text">align-self</span></h2>
+        <p>Básicamente sobreescribe la propiedad <span class="blue-text">align-items</span> para un solo elemento.</p>
+        <p>Con fines de demostrar cómo funciona, en los siguientes demos se aplican las propiedades
+            <span class="red-text">flex-direction: row; align-items: center</span> a todos los elementos
+            excepto a los morados que demuestran el comportamiento de la propiedad <b>align-self</b>.</p>
+
+        <section class="section-wrapper">
+            <h3>Default - Conserva la configuración de
+                <span class="blue-text">align-items</span> -
+                <span class="red-text">align-self: auto</span></h3>
+            <div class="gray-div flexbox-parent flex-align-center">
+                <div class="green-div ">One</div>
+                <div class="purple-div flex-self-align-auto">Two</div>
+                <div class="yellow-div">Three</div>
+                <div class="purple-div flex-self-align-auto">Four</div>
+                <div class="red-div">Five</div>
+                <div class="blue-div">Six</div>
+            </div>
+        </section>
+
+        <section class="section-wrapper">
+            <h3>Alinea un elemento en particular al inicio del contenedor -
+                <span class="red-text">align-self: flex-start</span></h3>
+            <div class="gray-div flexbox-parent flex-align-center">
+                <div class="green-div">One</div>
+                <div class="purple-div flex-self-align-start">Two</div>
+                <div class="yellow-div">Three</div>
+                <div class="purple-div flex-self-align-start">Four</div>
+                <div class="red-div">Five</div>
+                <div class="blue-div">Six</div>
+            </div>
+        </section>
+
+        <section class="section-wrapper">
+            <h3>Alinea un elemento en particular al final del contenedor -
+                <span class="red-text">align-self: flex-end</span></h3>
+            <div class="gray-div flexbox-parent flex-align-center">
+                <div class="green-div">One</div>
+                <div class="purple-div flex-self-align-end">Two</div>
+                <div class="yellow-div">Three</div>
+                <div class="purple-div flex-self-align-end">Four</div>
+                <div class="red-div">Five</div>
+                <div class="blue-div">Six</div>
+            </div>
+        </section>
+
+        <section class="section-wrapper">
+            <h3>Alinea un elemento en particular al centro del contenedor -
+                <span class="red-text">align-self: center</span></h3>
+            <div class="gray-div flexbox-parent flex-align-center">
+                <div class="green-div">One</div>
+                <div class="purple-div flex-self-align-center">Two</div>
+                <div class="yellow-div">Three</div>
+                <div class="purple-div flex-self-align-center">Four</div>
+                <div class="red-div">Five</div>
+                <div class="blue-div">Six</div>
+            </div>
+        </section>
+
+        <section class="section-wrapper">
+            <h3>Un elemento en particular se expande por todo el Eje Cruzado -
+                <span class="red-text">align-self: stretch</span></h3>
+            <div class="gray-div flexbox-parent flex-align-center">
+                <div class="green-div">One</div>
+                <div class="purple-div flex-self-align-stretch">Two</div>
+                <div class="yellow-div">Three</div>
+                <div class="purple-div flex-self-align-stretch">Four</div>
+                <div class="red-div">Five</div>
+                <div class="blue-div">Six</div>
+            </div>
+        </section>
+
+        <section class="section-wrapper">
+            <h3>La parte inferior de los párrafos de ciertos elementos se alinean -
+                <span class="red-text">align-self: baseline</span></h3>
+            <div class="gray-div flexbox-parent flex-align-center">
+                <div class="green-div">One</div>
+                <div class="purple-div flex-self-align-baseline" style="height: 65px; text-decoration: underline">Two</div>
+                <div class="yellow-div">Three</div>
+                <div class="purple-div flex-self-align-baseline" style="height: 50px; text-decoration: underline">Four</div>
+                <div class="red-div">Five</div>
+                <div class="blue-div">Six</div>
+            </div>
+            <h3>En ausencia de párrafos, se alinean las partes inferiores de ciertos elementos -
+                <span class="red-text">align-self: baseline</span></h3>
+            <div class="gray-div flexbox-parent flex-align-center">
+                <div class="green-div" style="height: 80px; width: 80px"></div>
+                <div class="purple-div flex-self-align-baseline" style="height: 35px; width: 80px"></div>
+                <div class="yellow-div" style="height: 40px; width: 80px"></div>
+                <div class="purple-div flex-self-align-baseline" style="height: 50px; width: 80px"></div>
+                <div class="red-div" style="height: 70px; width: 80px"></div>
+                <div class="blue-div" style="height: 50px; width: 80px"></div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

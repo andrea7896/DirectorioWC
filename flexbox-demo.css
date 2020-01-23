@@ -93,6 +93,10 @@ main {
     background-color: green;
 }
 
+.purple-div {
+    background-color: mediumpurple;
+}
+
 .red-div {
     background-color: #FF696D;
 }
@@ -155,4 +159,28 @@ main {
 
 .flex-align-baseline {
     align-items: baseline;
+}
+
+.flex-self-align-auto {
+    align-self: auto;
+}
+
+.flex-self-align-start {
+    align-self: flex-start;
+}
+
+.flex-self-align-end {
+    align-self: flex-end;
+}
+
+.flex-self-align-center {
+    align-self: center;
+}
+
+.flex-self-align-stretch {
+    align-self: stretch;
+}
+
+.flex-self-align-baseline {
+    align-self: baseline;
 }
