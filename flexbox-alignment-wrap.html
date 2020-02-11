@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FlexBox Demo</title>
+    <link rel="stylesheet" href="flexbox-demo.css"/>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="flexbox-demo.html">Contenedores Flexbox</a>
+        <a href="flexbox-alignment-main-axis.html" class="active">Alineación de Elementos</a>
+        <a href="flexbox-demo-distribution.html">Distribución de Elementos</a>
+    </nav>
+    <nav class="subnavbar">
+        <a href="flexbox-alignment-main-axis.html">Eje Principal (Justify Content)</a>
+        <a href="flexbox-alignment-cross-axis.html">Eje Cruzado (Align Items)</a>
+        <a href="flexbox-alignment-self.html">Un Elemento en Particular (Align Self)</a>
+        <a href="flexbox-alignment-wrap.html" class="active">Multilínea</a>
+    </nav>
+    <main>
+        <h2>Reparte los items flex en varias líneas:  <span class="red-text">flex-wrap</span></h2>
+        <p>Cuando los ítems sean demasiados para desplegarlos en una línea, serán repartidos en la línea siguiente.</p>
+        <p>Con fines de demostrar cómo funciona, en los siguientes demos se aplican un ancho de 600px al contenedor
+            padre (contenedor gris) y uno de 100px a los items flex (contenedores de colores)</p>
+        <section class="section-wrapper">
+            <h3>Default - <span class="red-text">flex-wrap: nowrap</span></h3>
+            <p>4 items, tamaño exacto del contenedor padre:</p>
+            <div class="gray-div flexbox-parent fixed-width-600">
+                <div class="green-div fixed-width-150">150px</div>
+                <div class="yellow-div fixed-width-150">150px</div>
+                <div class="red-div fixed-width-150">150px</div>
+                <div class="blue-div fixed-width-150">150px</div>
+            </div>
+            <p>5 items exceden el tamaño del padre, por default se contraen para ajustarse al ancho del padre
+                (width reajustado a 120px):</p>
+            <div class="gray-div flexbox-parent fixed-width-600">
+                <div class="green-div fixed-width-150">150px</div>
+                <div class="yellow-div fixed-width-150">150px</div>
+                <div class="red-div fixed-width-150">150px</div>
+                <div class="blue-div fixed-width-150">150px</div>
+                <div class="purple-div fixed-width-150">150px</div>
+            </div>
+             <p>Cuando no pueden contraerse lo suficiente, pueden salirse del contenedor:</p>
+            <div class="gray-div flexbox-parent fixed-width-600">
+                <div class="green-div fixed-width-150">One</div>
+                <div class="yellow-div fixed-width-150">Two</div>
+                <div class="red-div fixed-width-150">Three</div>
+                <div class="blue-div fixed-width-150">Four</div>
+                <div class="purple-div fixed-width-150">Five</div>
+                <div class="green-div fixed-width-150">Six</div>
+                <div class="yellow-div fixed-width-150">Seven</div>
+                <div class="red-div fixed-width-150">Eight</div>
+                <div class="blue-div fixed-width-150">Nine</div>
+                <div class="purple-div fixed-width-150">Ten</div>
+                <div class="green-div fixed-width-150">Eleven</div>
+            </div>
+        </section>
+        <section class="section-wrapper">
+            <h3>Repartir en múltiples líneas - <span class="red-text">flex-wrap: wrap</span></h3>
+            <p>4 items, tamaño exacto del contenedor padre, se conserva igual:</p>
+            <div class="gray-div flexbox-parent flex-wrap fixed-width-600">
+                <div class="green-div fixed-width-150">150px</div>
+                <div class="yellow-div fixed-width-150">150px</div>
+                <div class="red-div fixed-width-150">150px</div>
+                <div class="blue-div fixed-width-150">150px</div>
+            </div>
+            <p>5 items exceden el tamaño del padre, se reparten en la siguiente línea:</p>
+            <div class="gray-div flexbox-parent flex-wrap fixed-width-600">
+                <div class="green-div fixed-width-150">150px</div>
+                <div class="yellow-div fixed-width-150">150px</div>
+                <div class="red-div fixed-width-150">150px</div>
+                <div class="blue-div fixed-width-150">150px</div>
+                <div class="purple-div fixed-width-150">150px</div>
+            </div>
+             <p>Varios items se reparten en múltiples líneas:</p>
+            <div class="gray-div flexbox-parent flex-wrap fixed-width-600">
+                <div class="green-div fixed-width-150">One</div>
+                <div class="yellow-div fixed-width-150">Two</div>
+                <div class="red-div fixed-width-150">Three</div>
+                <div class="blue-div fixed-width-150">Four</div>
+                <div class="purple-div fixed-width-150">Five</div>
+                <div class="green-div fixed-width-150">Six</div>
+                <div class="yellow-div fixed-width-150">Seven</div>
+                <div class="red-div fixed-width-150">Eight</div>
+                <div class="blue-div fixed-width-150">Nine</div>
+                <div class="purple-div fixed-width-150">Ten</div>
+                <div class="green-div fixed-width-150">Eleven</div>
+            </div>
+        </section>
+        <section class="section-wrapper">
+            <h3>Repartir en múltiples líneas, pero con el flujo de los items invertido -
+                <span class="red-text">flex-wrap: wrap-reverse</span></h3>
+            <div class="gray-div flexbox-parent flex-wrap-reverse fixed-width-600">
+                <div class="green-div fixed-width-150">One</div>
+                <div class="yellow-div fixed-width-150">Two</div>
+                <div class="red-div fixed-width-150">Three</div>
+                <div class="blue-div fixed-width-150">Four</div>
+                <div class="purple-div fixed-width-150">Five</div>
+                <div class="green-div fixed-width-150">Six</div>
+                <div class="yellow-div fixed-width-150">Seven</div>
+                <div class="red-div fixed-width-150">Eight</div>
+                <div class="blue-div fixed-width-150">Nine</div>
+                <div class="purple-div fixed-width-150">Ten</div>
+                <div class="green-div fixed-width-150">Eleven</div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

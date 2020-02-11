@@ -109,6 +109,13 @@ main {
     background-color: #FFD347;
 }
 
+.fixed-width-600 {
+    width: 600px;
+}
+
+.fixed-width-150 {
+    width: 150px;
+}
 
 /* Flexbox Properties */
 
@@ -183,4 +190,12 @@ main {
 
 .flex-self-align-baseline {
     align-self: baseline;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-wrap-reverse {
+    flex-wrap: wrap-reverse;
 }
