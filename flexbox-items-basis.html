@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FlexBox Demo</title>
+    <link rel="stylesheet" href="flexbox-demo.css"/>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="flexbox-demo.html">Contenedores Flexbox</a>
+        <a href="flexbox-alignment-main-axis.html">Alineación de Elementos</a>
+        <a href="flexbox-items-basis.html" class="active">Items Flex</a>
+    </nav>
+    <nav class="subnavbar">
+        <a href="flexbox-items-basis.html" class="active">Basis</a>
+        <a href="flexbox-items-grow.html">Grow</a>
+        <a href="flexbox-items-shrink.html">Shrink</a>
+    </nav>
+    <main>
+        <h2>Controla el tamaño por default de un elemento, antes de ser manipulado por otra propiedad flex.</h2>
+
+        <h3>Con respecto al Eje Principal cuando <span class="blue-text">flex-direction: row</span></h3>
+        <section class="section-wrapper">
+            <h3>Default -  <span class="red-text">flex-basis: auto</span></h3>
+            <p>Si el elemento tiene predefinido un width, ese valor es tomado como el flex-basis. Ej.: Los siguientes
+                elementos tiene definido un width de 100px, por lo tanto flex-basis toma esos 100px.</p>
+            <div class="gray-div flexbox-parent fixed-width-600">
+                <div class="green-div fixed-square-100">100px</div>
+                <div class="yellow-div fixed-square-100">100px</div>
+                <div class="red-div fixed-square-100">100px</div>
+                <div class="blue-div fixed-square-100">100px</div>
+            </div>
+            <p>Si el elemento no tiene predefinido un width, entonces el tamaño de su contenido es usado
+                como flex-basis.</p>
+            <div class="gray-div flexbox-parent fixed-width-600">
+                <div class="green-div">Algún</div>
+                <div class="yellow-div">Contenido</div>
+                <div class="red-div">100px</div>
+                <div class="blue-div">Sin width definido</div>
+            </div>
+        </section>
+        <section class="section-wrapper">
+            <h3>Intercambiable con la propiedad width - <span class="red-text">flex-basis: unit</span></h3>
+            <p><b>Usando pixeles</b></p>
+            <b><span class="red-text">flex-basis: 100px</span></b>
+            <div class="gray-div flexbox-parent fixed-width-600">
+                <div class="green-div flex-basis-100px">100px</div>
+                <div class="yellow-div flex-basis-100px">100px</div>
+                <div class="red-div flex-basis-100px">100px</div>
+                <div class="blue-div flex-basis-100px">100px</div>
+            </div>
+            <b><span class="red-text">flex-basis: 150px</span></b>
+            <div class="gray-div flexbox-parent fixed-width-600">
+                <div class="green-div flex-basis-150px">100px</div>
+                <div class="yellow-div flex-basis-150px">100px</div>
+                <div class="red-div flex-basis-150px">100px</div>
+                <div class="blue-div flex-basis-150px">100px</div>
+            </div>
+            <p><b>Usando porcentajes</b></p>
+             <b><span class="red-text">flex-basis: 20%</span></b>
+            <div class="gray-div flexbox-parent fixed-width-600">
+                <div class="green-div flex-basis-20p">100px</div>
+                <div class="yellow-div flex-basis-20p">100px</div>
+                <div class="red-div flex-basis-20p">100px</div>
+                <div class="blue-div flex-basis-20p">100px</div>
+            </div>
+            <b><span class="red-text">flex-basis: 25%</span></b>
+            <div class="gray-div flexbox-parent fixed-width-600">
+                <div class="green-div flex-basis-25p">100px</div>
+                <div class="yellow-div flex-basis-25p">100px</div>
+                <div class="red-div flex-basis-25p">100px</div>
+                <div class="blue-div flex-basis-25p">100px</div>
+            </div>
+        </section>
+
+        <h3>Con respecto al Eje Principal cuando <span class="blue-text">flex-direction: column</span></h3>
+        <section class="section-wrapper">
+            <h3>Default -  <span class="red-text">flex-basis: auto</span></h3>
+            <p>Si el elemento tiene predefinido un height, ese valor es tomado como el flex-basis. Ej.: Los siguientes
+                elementos tiene definido un height de 100px, por lo tanto flex-basis toma esos 100px.</p>
+            <div class="gray-div flexbox-parent-column fixed-height-600 fixed-width-150">
+                <div class="green-div fixed-square-100">100px</div>
+                <div class="yellow-div fixed-square-100">100px</div>
+                <div class="red-div fixed-square-100">100px</div>
+                <div class="blue-div fixed-square-100">100px</div>
+            </div>
+            <p>Si el elemento no tiene predefinido un height, entonces el tamaño de su contenido es usado
+                como flex-basis.</p>
+            <div class="gray-div flexbox-parent-column fixed-height-300 fixed-width-150">
+                <div class="green-div">Algún</div>
+                <div class="yellow-div">Contenido</div>
+                <div class="red-div">100px, 200px, 300px</div>
+                <div class="blue-div">Sin height definido</div>
+            </div>
+        </section>
+        <section class="section-wrapper">
+            <h3>Intercambiable con la propiedad height - <span class="red-text">flex-basis: unit</span></h3>
+            <p><b>Usando pixeles</b></p>
+            <b><span class="red-text">flex-basis: 100px</span></b>
+            <div class="gray-div flexbox-parent-column fixed-height-600 fixed-width-150">
+                <div class="green-div flex-basis-100px">100px</div>
+                <div class="yellow-div flex-basis-100px">100px</div>
+                <div class="red-div flex-basis-100px">100px</div>
+                <div class="blue-div flex-basis-100px">100px</div>
+            </div>
+            <b><span class="red-text">flex-basis: 150px</span></b>
+            <div class="gray-div flexbox-parent-column fixed-height-600 fixed-width-150">
+                <div class="green-div flex-basis-150px">100px</div>
+                <div class="yellow-div flex-basis-150px">100px</div>
+                <div class="red-div flex-basis-150px">100px</div>
+                <div class="blue-div flex-basis-150px">100px</div>
+            </div>
+            <p><b>Usando porcentajes</b></p>
+            <b><span class="red-text">flex-basis: 20%</span></b>
+            <div class="gray-div flexbox-parent-column fixed-height-600 fixed-width-150">
+                <div class="green-div flex-basis-20p">100px</div>
+                <div class="yellow-div flex-basis-20p">100px</div>
+                <div class="red-div flex-basis-20p">100px</div>
+                <div class="blue-div flex-basis-20p">100px</div>
+            </div>
+            <b><span class="red-text">flex-basis: 25%</span></b>
+            <div class="gray-div flexbox-parent-column fixed-height-600 fixed-width-150">
+                <div class="green-div flex-basis-25p">100px</div>
+                <div class="yellow-div flex-basis-25p">100px</div>
+                <div class="red-div flex-basis-25p">100px</div>
+                <div class="blue-div flex-basis-25p">100px</div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
